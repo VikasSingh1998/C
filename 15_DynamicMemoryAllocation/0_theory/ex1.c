@@ -43,7 +43,21 @@ Syntax	               void* malloc(size_t size)	                                
 Arguments	           Takes a single argument: total size in bytes.	                        Takes two arguments: number of elements and size of each element.
 Performance	           Slightly faster as it doesn’t initialize memory.	                        Slightly slower due to initialization overhead.
 
-===========================================================================================================================
+========================================================================================================================================================
+3. realloc() ==> Reallocate Memory
+---------------------------------
+Syntax: 
+     void* realloc(void* ptr, size_t size);
+==> Changes the size of a previously allocated block of memory.
+==> Can increase or decrease the memory block.
+==> If the new size is larger, contents of the original memory remain unchanged.
+
+Example: 
+    ptr = (int *)realloc(ptr, 10 * sizeof(int)); // Resizes the block for 10 integers
+======================================================================================================
+4. free()  ==> Frees previously allocated memory and makes it available for reuse.
+Syntax:
+    void free(void* ptr);
 
 
 
