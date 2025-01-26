@@ -23,4 +23,8 @@ int main() {
     
     return 0;
 }
-
+/*
+Explanation:
+When data.i is assigned a value, it occupies the memory.
+When data.f is assigned, it overwrites the same memory used by data.i
+*/
